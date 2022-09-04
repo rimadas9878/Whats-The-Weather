@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    border: 0px;
+    width: auto;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+
+#header{
+    text-align: center;
+    background-color:crimson;
+    padding: 20px;
+    font-size: 40px;
+}
+#container{
+    width: auto;
+    height: auto;
+    flex-direction: row;
+   
+    height: 750px;
+    margin: 10px;
+    display:flex;
+    flex-direction: row;
+}
+#searchContainer{
+    
+    margin: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#weatherdetailsContainer{
+    
+    margin: 10px;
+    width: 80%;
+}
+#forcastDays{
+    
+    margin: 10px;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+
+}
+#weatherDetails{
+   
+    margin: 10px;
+    height: 40%;
+}
+#days{
+    
+    margin: 10px;
+    height: 70%;
+    width: 60%;
+    margin: 10px 5px;
+    background-color: rgb(137, 137, 190);
+}
+#searchHeader{
+    font-size: 30px;
+}
+#cityName{
+    padding: 20px;
+    margin: 5px;
+    
+    font-size: 20px;
+}
+#searchBtn{
+    margin: 10px;
+    padding: 20px;
+    color: coral;
+    font-size: 20px;
+}
+#searchBtn:hover{
+    background-color: brown;
+}
