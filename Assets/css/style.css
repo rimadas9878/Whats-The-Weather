@@ -10,9 +10,10 @@ body{
 
 #header{
     text-align: center;
-    background-color:crimson;
-    padding: 20px;
-    font-size: 40px;
+    background: linear-gradient(#380036, #0CBABA);
+    padding: 40px;
+    font-size: 50px;
+    color: antiquewhite;
 }
 #container{
     width: auto;
@@ -30,6 +31,7 @@ body{
     width: 20%;
     display: flex;
     flex-direction: column;
+    background-color: bisque;
 }
 
 #weatherdetailsContainer{
@@ -37,10 +39,11 @@ body{
     margin: 10px;
     width: 80%;
 }
+
 #forcastDays{
     
     margin: 10px;
-    height: 55%;
+    height: 50%;
     display: flex;
     flex-direction: row;
     margin: 20px;
@@ -50,30 +53,67 @@ body{
    
     margin: 10px;
     height: 40%;
+    border: 1px solid black;
 }
-#days{
-    
-    margin: 10px;
-    height: 70%;
+.days{
+    height: 90%;
     width: 60%;
-    margin: 10px 5px;
-    background-color: rgb(137, 137, 190);
+    margin: 5px 5px;
+    background-color: #0CBABA;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
 }
 #searchHeader{
     font-size: 30px;
 }
 #cityName{
-    padding: 20px;
+    padding: 15px;
     margin: 5px;
     
     font-size: 20px;
 }
+h3{
+    margin: 10px;
+}
 #searchBtn{
     margin: 10px;
-    padding: 20px;
-    color: coral;
+    padding: 10px;
     font-size: 20px;
+    background-color: #0CBABA;
+    border-radius: 5px;
+    color: antiquewhite;
 }
 #searchBtn:hover{
-    background-color: brown;
+    background-color: #380036;
+}
+#h-divider{
+    margin-top:5px;
+    margin-bottom:5px;
+    height:3px;
+    width:100%;
+    align-items: center;
+    border-top:4px solid gray;
+   }
+
+#weatherGrid{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px;
+}
+.weatherConditions{
+    padding: 0px 5px;
+    font: bolder;
+}
+.imageDays{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+
+}
+#date{
+    text-align: center;
+    margin: 0px 0px;
 }

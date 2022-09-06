@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/css/style.css" />
 </head>
 
@@ -13,27 +17,132 @@
     <section>
         <h1 id="header">Weather Dashboard</h1>
     </section>
-<section id="container">
+    <section id="container">
         <section id="searchContainer">
             <h1 id="searchHeader">Search For City : </h1>
             <input type="text" id="cityName" placeholder="Enter the city name">
-            <button id="searchBtn">Search</button>
+            <button id="searchBtn" class="btn-secondary">Search <img src="./Assets/Images/icons8-search-64.png"
+                    width="30px" height="30px"></button>
+            <span id="h-divider"></span>
         </section>
 
         <section id="weatherdetailsContainer">
             <section id="weatherDetails">
-            <p>weather will be displayed here</p>
+                <section id="cityName">
+                    <h2><span id="nameOfCity">City Name</span>
+                        <img src="http://openweathermap.org/img/wn/04n.png" id="iconOfWeather" class="image"
+                            alt="weathericon">
+                    </h2>
+                </section>
+
+                <section id="weatherGrid">
+                    <label for="temp" class="weatherConditionslabel" id="temp">Temperature: </label>
+                    <p class="weatherConditions" id="tempDisplay"></p>
+                </section>
+
+                <section id="weatherGrid">
+                    <label for="wind" class="weatherConditionslabel" id="wind">Wind Speed: </label><br>
+                    <p class="weatherConditions" id="windDisplay"></p>
+                </section>
+
+                <section id="weatherGrid">
+                    <label for="humidity" class="weatherConditionslabel" id="humidity">Humidity: </label><br>
+                    <p class="weatherConditions" id="humidityDisplay"></p>
+                </section>
+
+                <section id="weatherGrid">
+                    <label for="UV Index" class="weatherConditionslabel" id="UV Index">UV Index: </label><br>
+                    <p class="weatherConditions" id="UVindex"></p>
+                </section>
             </section>
+            <h3>5 Days Forecast</h3>
             <section id="forcastDays">
-                <h3 id="days">Day1</h3>
-                <h3 id="days">Day2</h3>
-                <h3 id="days">Day3</h3>
-                <h3 id="days">Day4</h3>
-                <h3 id="days">Day5</h3>
+                <section id="Day1" class="days">
+                    <p id="date">Date</p> 
+                    <img src="http://openweathermap.org/img/wn/04n.png" id="iconOfWeather" class="imageDays" alt="weathericon">
+                    <section id="weatherGrid">
+                        <label for="temp" class="weatherConditionslabel" id="temp">Temperature: </label>
+                        <p class="weatherConditions" id="tempDisplay"></p>
+                    </section>   
+                    <section id="weatherGrid">
+                        <label for="wind" class="weatherConditionslabel" id="wind">Wind Speed: </label><br>
+                        <p class="weatherConditions" id="windDisplay"></p>
+                    </section>
+                    <section id="weatherGrid">
+                        <label for="humidity" class="weatherConditionslabel" id="humidity">Humidity: </label><br>
+                        <p class="weatherConditions" id="humidityDisplay"></p>
+                    </section>
+                </section>
+                <section id="Day2" class="days">
+                    <p id="date">Date</p> 
+                    <img src="http://openweathermap.org/img/wn/04n.png" id="iconOfWeather" class="imageDays" alt="weathericon">
+                    <section id="weatherGrid">
+                        <label for="temp" class="weatherConditionslabel" id="temp">Temperature: </label>
+                        <p class="weatherConditions" id="tempDisplay"></p>
+                    </section>   
+                    <section id="weatherGrid">
+                        <label for="wind" class="weatherConditionslabel" id="wind">Wind Speed: </label><br>
+                        <p class="weatherConditions" id="windDisplay"></p>
+                    </section>
+                    <section id="weatherGrid">
+                        <label for="humidity" class="weatherConditionslabel" id="humidity">Humidity: </label><br>
+                        <p class="weatherConditions" id="humidityDisplay"></p>
+                    </section>
+                </section>
+                <section id="Day3" class="days">
+                    <p id="date">Date</p> 
+                    <img src="http://openweathermap.org/img/wn/04n.png" id="iconOfWeather" class="imageDays" alt="weathericon">
+                    <section id="weatherGrid">
+                        <label for="temp" class="weatherConditionslabel" id="temp">Temperature: </label>
+                        <p class="weatherConditions" id="tempDisplay"></p>
+                    </section>   
+                    <section id="weatherGrid">
+                        <label for="wind" class="weatherConditionslabel" id="wind">Wind Speed: </label><br>
+                        <p class="weatherConditions" id="windDisplay"></p>
+                    </section>
+                    <section id="weatherGrid">
+                        <label for="humidity" class="weatherConditionslabel" id="humidity">Humidity: </label><br>
+                        <p class="weatherConditions" id="humidityDisplay"></p>
+                    </section>
+                </section>
+                <section id="Day4" class="days">
+                    <p id="date">Date</p> 
+                    <img src="http://openweathermap.org/img/wn/04n.png" id="iconOfWeather" class="imageDays" alt="weathericon">
+                    <section id="weatherGrid">
+                        <label for="temp" class="weatherConditionslabel" id="temp">Temperature: </label>
+                        <p class="weatherConditions" id="tempDisplay"></p>
+                    </section>   
+                    <section id="weatherGrid">
+                        <label for="wind" class="weatherConditionslabel" id="wind">Wind Speed: </label><br>
+                        <p class="weatherConditions" id="windDisplay"></p>
+                    </section>
+                    <section id="weatherGrid">
+                        <label for="humidity" class="weatherConditionslabel" id="humidity">Humidity: </label><br>
+                        <p class="weatherConditions" id="humidityDisplay"></p>
+                    </section>
+                </section>
+                <section id="Day5" class="days">
+                    <p id="date">Date</p> 
+                    <img src="http://openweathermap.org/img/wn/04n.png" id="iconOfWeather" class="imageDays" alt="weathericon">
+                    <section id="weatherGrid">
+                        <label for="temp" class="weatherConditionslabel" id="temp">Temperature: </label>
+                        <p class="weatherConditions" id="tempDisplay"></p>
+                    </section>   
+                    <section id="weatherGrid">
+                        <label for="wind" class="weatherConditionslabel" id="wind">Wind Speed: </label><br>
+                        <p class="weatherConditions" id="windDisplay"></p>
+                    </section>
+                    <section id="weatherGrid">
+                        <label for="humidity" class="weatherConditionslabel" id="humidity">Humidity: </label><br>
+                        <p class="weatherConditions" id="humidityDisplay"></p>
+                    </section>
+                </section>
             </section>
         </section>
-</section>
-
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <script src="./Assets/js/script.js"></script>
 </body>
 
