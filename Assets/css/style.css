@@ -38,15 +38,16 @@ body{
     
     margin: 10px;
     width: 80%;
+    line-height: 10px;
 }
 
 #forcastDays{
     
-    margin: 10px;
+    margin: 5px;
     height: 50%;
     display: flex;
     flex-direction: row;
-    margin: 20px;
+
 
 }
 #weatherDetails{
@@ -63,15 +64,15 @@ body{
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
+    text-align: center;
 
 }
 #searchHeader{
     font-size: 30px;
 }
 #cityName{
-    padding: 15px;
-    margin: 5px;
-    
+    padding: 10px;
+    margin: 1px;  
     font-size: 20px;
 }
 h3{
@@ -101,19 +102,29 @@ h3{
     display: flex;
     flex-direction: row;
     padding: 5px 10px;
+    line-height: 20px;
 }
 .weatherConditions{
     padding: 0px 5px;
     font: bolder;
 }
 .imageDays{
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
+    text-align: center;
 
 }
 #date{
     text-align: center;
     margin: 0px 0px;
+    font-size: 50px;
+    font-weight: bolder;
+
+}
+#UVindex{
+   
+    padding: 10px 20px;
+    margin: 0px 10px;
 }
