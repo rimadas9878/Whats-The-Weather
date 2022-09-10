@@ -1,4 +1,4 @@
-<h1>Assignment03-Whats-The-Weatherd</h1>
+<h1>Assignment03-Whats-The-Weather</h1>
 <p>This assignment is about fetching current and, 5 days weather data from across the world from an API</p>
 
 <h3>On the screen you will see</h3>
