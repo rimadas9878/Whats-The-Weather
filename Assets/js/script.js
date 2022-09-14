@@ -52,6 +52,7 @@ function displayPerDayWeather(){
         }; 
 
         const { name } = data;
+        const {dt} = data;
         const { temp } = data.main;
         const { humidity } = data.main;
         const { speed } = data.wind;
@@ -59,13 +60,15 @@ function displayPerDayWeather(){
         const { lat } = data.coord;
         const { lon } = data.coord;
 
-        console.log(name, temp, humidity, speed, icon, lat, lon);
+        console.log(name, dt, temp, humidity, speed, icon, lat, lon);
 
-        document.getElementById('nameOfCity').innerText = name;
+        var currentDate = new Date(dt*1000).toDateString();
+        console.log(currentDate);
+        document.getElementById('nameOfCity').innerText = name + "(" + currentDate.slice(4,10) + ")";
         document.getElementById('iconOfWeather').src = `http://openweathermap.org/img/wn/${icon}.png`
-        document.getElementById('tempDisplay').innerText = temp;
-        document.getElementById('windDisplay').innerText = speed;
-        document.getElementById('humidityDisplay').innerText = humidity;
+        document.getElementById('tempDisplay').innerText = temp + "°C";
+        document.getElementById('windDisplay').innerText = speed + "mph";
+        document.getElementById('humidityDisplay').innerText = humidity + "%";
         document.getElementById('UVindex').innerText;
 
         fetch("https://api.openweathermap.org/data/2.5/forecast?lat="
@@ -90,9 +93,9 @@ function displayPerDayWeather(){
                             console.log(dt, icon, temp, speed, humidity)
                             document.getElementById('getDay'+j+'Date').innerText = new Date(dt*1000).toDateString();
                             document.getElementById('day'+j+'Image').src = `http://openweathermap.org/img/wn/${icon}.png`;
-                            document.getElementById('day'+j+'TemparatureDisplay').innerText = temp;
-                            document.getElementById('day'+j+'WindDisplay').innerText = speed;
-                            document.getElementById('day'+j+'HumidityDisplay').innerText = humidity;
+                            document.getElementById('day'+j+'TemparatureDisplay').innerText = temp + "°C";
+                            document.getElementById('day'+j+'WindDisplay').innerText = speed + "mph";
+                            document.getElementById('day'+j+'HumidityDisplay').innerText = humidity + "%";
 
                         }
                         

@@ -139,3 +139,64 @@ h3{
     border-radius: 8px;
     margin: 5px;
 }
+@media (max-width:992px) {
+    body {
+        width: 100%;
+    }
+    #weatherGrid{
+        font-size: 200% !important;
+        margin: 5%;
+        padding: 20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #forcastDays{
+        font-size: 200% !important;
+        margin: 5%;
+        padding: 20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:768px) {
+    body {
+        width: 100%;
+    }
+    #weatherGrid{
+        font-size: 100% !important;
+        margin: 30%;
+        padding: 20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #forcastDays{   
+        font-size: 100% !important;
+        margin: 30%;
+        padding: 20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:481px) {
+    body {
+        width: 50%;
+    }
+    #weatherGrid{
+        font-size: 50% !important;
+        margin: 20%;
+        padding: 20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #forcastDays{
+        font-size: 50% !important;
+        margin: 20%;
+        padding: 20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
